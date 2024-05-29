@@ -1,0 +1,63 @@
+//Criei as classes para que eu estruturasse o restante do código
+
+
+
+class Pedido {
+  constructor(clienteId, status, dataPedido) {
+    this.id = generateId();
+    this.clienteId = clienteId;
+    this.status = status;
+    this.dataPedido = dataPedido;
+  }
+}
+
+
+
+class Funcionario {
+  constructor(username, cpf, email, senha) {
+    this.id = generateId();
+    this.username = username;
+    this.cpf = cpf;
+    this.email = email;
+    this.senha = senha;
+  }
+}
+
+
+
+
+class Cliente {
+  constructor(nome, dataNascimento, cpf, email, senha) {
+    this.id = generateId();
+    this.nome = nome;
+    this.dataNascimento = dataNascimento;
+    this.cpf = cpf;
+    this.email = email;
+    this.senha = senha;
+
+
+
+class Produto {
+  constructor(nome, descricao, dataValidade, preco, quantidadeEstoque) {
+    this.id = generateId();
+    this.nome = nome;
+    this.descricao = descricao;
+    this.dataValidade = dataValidade;
+    this.preco = preco;
+    this.quantidadeEstoque = quantidadeEstoque;
+  }
+}
+
+class Database {
+    constructor() {
+      this.pedidos = [];
+      this.funcionarios = [];
+      this.clientes = [];
+      this.produtos = [];
+    }
+  
+}
+  
+
+
+
